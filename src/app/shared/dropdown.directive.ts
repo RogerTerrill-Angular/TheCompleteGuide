@@ -10,8 +10,8 @@ export class DropdownDirective {
     this.isOpen = !this.isOpen;
   }
 
-  @HostListener('focusout') focusout() {
-    this.isOpen = false;
+  @HostListener('click') toggleOpen() {
+    this.isOpen = !this.isOpen;
   }
 
   constructor() {
